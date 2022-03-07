@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/images/bg.jpg");
+    overflow: hidden;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.container{
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px 40px;
+    border-radius: 5px;
+    position: relative;
+    
+}
+
+.container h1{
+    text-align: center;
+}
+
+.form_control{
+    margin: 20px 0 40px;
+    width: 250px;
+    position: relative;
+}
+
+.form_control input{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid white;
+    display: block;
+}
+
+.form_control .input {
+    width: 100%;
+    color: white;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.container p a{
+    color: steelblue;
+}
+
+.login{
+    width: 100%;
+    cursor: pointer;
+    padding: 10px;
+    display: inline-block;
+    background-color: lightblue;
+    border: none;
+    border-radius: 3px;
+}
+
+.login:active{
+    transform: scale(0.98);
+}
+
+.login:hover{
+    outline: 0;
+}
+
+.form_control label{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.form_control input:focus + label span,
+.form_control input:valid + label span {
+    color: lightblue;
+    transform: translateY(-30px); 
+}
+
+.form_control label span {
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+
